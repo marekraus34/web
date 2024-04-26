@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Moje portfolio</title>
+		<link rel="stylesheet" href="styleznamky.css">
+	
+	</head>
+    <body>
+        <div class="banner">
+			<div class="navbar">
+                
+				<img src="logo.png" class="logo">¨
+				<ul>
+					<li><a href="Domu.html">Domů</a></li>
+					<li><a href="znamky.html">Známky</a></li>
+					<li><a href="o_me.html">O mě</a></li>
+				</ul>
+        
+            </div>
+			<h1>Moje školní výsledky</h1>
+            
+            
+            <form action="tabulka.php" method="post">
+                <label for="predmet">Předmět:</label>
+                <input type="text" id="predmet" name="predmet" required><br><br>
+                
+                <label for="body">Počet bodů za semestr:</label>
+                <input type="number" id="body" name="body" required><br><br>
+                
+                <label for="zapocet">Získaný zápočet:</label>
+                <select id="zapocet" name="zapocet">
+                    <option value="ano">Ano</option>
+                    <option value="ne">Ne</option>
+                </select><br><br>
+                
+                <label for="zkouska">Absolvovaná zkouška:</label>
+                <select id="zkouska" name="zkouska">
+                    <option value="ano">Ano</option>
+                    <option value="ne">Ne</option>
+                </select><br><br>
+                
+                <input type="submit" value="Přidat výsledek">
+            </form>
+		</div>
+    </body>
+</html>
